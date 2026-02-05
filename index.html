@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>validation form</title>
+  </head>
+  <body>
+    <h1>Javascript Form Validation</h1>
+
+    <form name="myForm" onsubmit="return validateForm()">
+      <label for="name">Name*</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your Name"
+        required
+        class="responsive-aligned"
+      />
+      <br />
+      <br />
+
+      <label for="Phone">Phone Number*</label>
+      <input
+        type="text"
+        id="Phone"
+        name="Phone"
+        placeholder="Enter your Phone Number"
+        required
+        class="responsive-aligned"
+      />
+      <br />
+      <br />
+
+      <label for="Country">Country*</label>
+      <select id="Country" name="Country">
+        <option value="disabled selected">Select Country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="America">America</option>
+        <option value="Canada">Canada</option>
+        <option value="Italy">Italy</option>
+      </select>
+      <br />
+      <br />
+      <label for="age">Age*</label>
+      <select id="Age" name="Age">
+        <option value="disabled selected">Select Age</option>
+        <option value="10-20">10-20</option>
+        <option value="10-20">21-30</option>
+        <option value="10-20">31-40</option>
+        <option value="10-20">41-50</option>
+      </select>
+      <br /><br />
+
+      <label>Gender*</label>
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <br />
+      <br />
+      <label for="email">Email*</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Enter your Email"
+        required
+        class="responsive-aligned"
+      />
+      <br />
+      <br />
+
+      <label>Password (6-8 characters)*</label>
+      <input type="password" name="pass" required/>
+      <br />
+      <br />
+
+      <label>Verify Password*</label>
+      <input type="password" name="vpass" required/>
+      <br />
+      <br />
+      <div class="btns">
+        <input type="submit" value="SEND" />
+        <input type="reset" value="CLEAR" />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
